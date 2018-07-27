@@ -1,6 +1,6 @@
 exports.up = function(knex, Promise) {
     return knex.schema.createTable("resolution", table => {
-        table.increments("id").start(4);
+        table.increments("id");
         table.date("dueDate");
         table.text("resolution");
     });
